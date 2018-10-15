@@ -6,12 +6,14 @@ body {
   line-height: 1.5;
 }
 
-body {
+body{
   width: 100%;
   height: 100vh;
   background: url('assets/freedom.jpg') no-repeat center;
   background-size: cover;
   color: #333;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .wrapper {
@@ -19,15 +21,49 @@ body {
   width: 90%;
   margin: 0 auto;
   text-align: center;
+
+}
+
+@media (min-width: 768px){ 
+.wrapper {
+  padding-top: 4rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 }
 
 .quote {
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 2.5rem; 
+  font-size: 1.5rem; 
+
+}
+@media (min-width: 768px){ 
+.quote {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.5rem;   
+
+}
+.author {
+  font-family: 'Crimson Text', serif;
+  font-size: .9rem;
+  font-style: italic;
 }
 
+@media (min-width: 768px){ 
 .author {
   font-family: 'Crimson Text', serif;
   font-size: 1.5rem;
   font-style: italic;
+}
+}
+@media (min-width: 768px){ 
+header{
+  position: fixed;
+   
+    left:1px;
+    top:1px;
+  
+
+}
 }
