@@ -12,8 +12,13 @@ body{
   background: url('assets/freedom.jpg') no-repeat center;
   background-size: cover;
   color: #333;
+}
+
+@media (min-width: 768px){
+body{
   display: table-cell;
   vertical-align: middle;
+}
 }
 
 .wrapper {
@@ -60,9 +65,8 @@ body{
 @media (min-width: 768px){ 
 header{
   position: fixed;
-   
-    left:1px;
-    top:1px;
+  left:1px;
+  top:1px;
   
 
 }
